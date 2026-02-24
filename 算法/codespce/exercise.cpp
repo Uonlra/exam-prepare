@@ -1,3 +1,6 @@
-//
-// Created by neuraly on 2026/2/22.
-//
+#include "exercise.h"
+
+std::string build_message() {
+    return "Hello from C++!";
+}
+

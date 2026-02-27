@@ -1,0 +1,60 @@
+{
+	"C++ Template": {
+		"prefix": "cpp",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"using ll = long long;",
+			"",
+			"int main(){",
+			"    $0",
+			"    return 0;",
+			"}"
+		],
+		"description": "C++ 基础模板"
+	},
+	"C++ with Function": {
+		"prefix": "cppfc",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"using ll = long long;",
+			"",
+			"// 函数声明",
+			"$1",
+			"",
+			"int main(){",
+			"    $0",
+			"    return 0;",
+			"}",
+			"",
+			"// 函数实现"
+		],
+		"description": "C++ 带函数声明的模板"
+	},
+	"C++ Algorithm Template": {
+		"prefix": "cppalgo",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"using ll = long long;",
+			"using pii = pair<int, int>;",
+			"",
+			"const int N = 1e5 + 10;",
+			"const int MOD = 1e9 + 7;",
+			"",
+			"int main(){",
+			"    ios::sync_with_stdio(false);",
+			"    cin.tie(0);",
+			"    ",
+			"    $0",
+			"    ",
+			"    return 0;",
+			"}"
+		],
+		"description": "C++ 算法竞赛模板"
+	}
+}

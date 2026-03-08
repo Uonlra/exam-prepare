@@ -56,5 +56,33 @@
 			"}"
 		],
 		"description": "C++ 算法竞赛模板"
+	},
+	"C++ Public Problem Template": {
+		"prefix": "cpppub",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"using ll = long long;",
+			"",
+			"class Solution {",
+			"public:",
+			"    $1 solve($2) {",
+			"        $0",
+			"    }",
+			"};",
+			"",
+			"int main() {",
+			"    ios::sync_with_stdio(false);",
+			"    cin.tie(nullptr);",
+			"",
+			"    // 本地调试区",
+			"    // Solution s;",
+			"    // cout << s.solve(...) << '\\n';",
+			"",
+			"    return 0;",
+			"}"
+		],
+		"description": "C++ Public 类型刷题模板（class Solution + public）"
 	}
 }

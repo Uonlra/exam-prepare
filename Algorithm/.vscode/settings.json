@@ -8,5 +8,6 @@
     "editor.inlineSuggest.enabled": true,
     "github.copilot.advanced": {
         "length": 1
-    }
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }

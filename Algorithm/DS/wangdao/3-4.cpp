@@ -1,23 +1,37 @@
+#include <iostream>
 #include<bits/stdc++.h>
-#include <string>
+#include<string>
+#include <vector>
 using namespace std;
 
-int number[128];
+int divide(string str, int x){
+    int remainder = 0;
+    for (int i = 0; i < str.size(); ++i){
+        int current = remainder * 10 + str[i] - '0';
+        str[i]  = current % x;
+    } 
+    int pos = 0;
+    while(str[pos] == '0'){
+        pos++;
+    }
 
-int main(){
-    string str1,str2;
-    while(getline(cin,str1)){
-        if (str1 == "#") {
-            break;
+    return str.substr(pos); // 返回商的字符串表示，去掉前导零
+}
+
+int main() {
+    string str;
+    while(cin >> str){
+        vector<int> binary;
+        while(str.size()){
+            int last = str[str.size()-1]-'0';
+            binary.push_back(last % 2);
+            str = divide(str, 2);
         }
-        getline(cin, str2);
-        memset(number,0,sizeof(number));
-        for(int i = 0; i < str2.size(); ++i){
-            number[str2[i]]++; // 统计每个字符在str2中出现的次数
+        for (int i = binary.size() - 1; i>=0; --i){
+            cout << binary[i];
         }
-        for(int i = 0; i < str1.size(); ++i){
-            cout << str1[i] << number[str2[i]];// 输出字符和对应的数量
-        }
+        cout << endl;
     }
     return 0;
 }
+// 64 位输出请用 printf("%lld")
